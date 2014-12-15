@@ -6,4 +6,5 @@ To use:
 
 1. Clone this repo
 2. `ln -s ~/.vim/vimrc ~/.vimrc`
-3. `vim +PluginInstall +qall` 
+3. `git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
+4. `vim +PluginInstall +qall` 
