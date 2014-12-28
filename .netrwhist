@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/tim/propertyManagementApp/app/scripts/services'
+let g:netrw_dirhist_2='/home/tim/propertyManagementApp/app/scripts'
+let g:netrw_dirhist_3='/home/tim/propertyManagementApp/app/scripts/directives'
+let g:netrw_dirhist_4='/home/tim/propertyManagementApp/app/scripts'

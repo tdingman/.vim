@@ -32,6 +32,8 @@ noremap ; l
 inoremap qq <Esc>
 "  So is semicolon
 noremap <c-w> :wq<cr>
+" Now I have to remap windowing commands of course
+noremap ,w <c-w>
 " Make navigating tabs easy
 noremap 1 1gt
 noremap 2 2gt
