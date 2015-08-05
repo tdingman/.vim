@@ -1,24 +1,30 @@
-set tabstop=2			"These three change tabs to two spaces
+
+
+
+
+"These three change tabs to two spaces
+set tabstop=2
 set shiftwidth=2
 set expandtab
+
+" set 'nocompatible' to ward off unexpected things that your distro might
+" have made, as well as sanely reset options when re-sourcing .vimrc
 set nocompatible
-filetype off
+  
+" Attempt to determine the type of a file based on its name and possibly
+" its contents. Use this to allow intelligent auto-indenting for each filetype,
+" and for plugins that are filetype specific.
+filetype indent plugin on
+   
+" Enable syntax highlighting
+ syntax on
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+" Better command-line completion
+set wildmenu
 
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
+" Display line numbers on the left
+set number
 
-" plugin on GitHub repo
-Plugin 'mattn/emmet-vim'
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
 
 
 " New key mappings
@@ -30,9 +36,7 @@ noremap l k
 noremap ; l
 " Escape is bullshit
 inoremap qq <Esc>
-"  So is semicolon
-noremap <c-w> :wq<cr>
-" Now I have to remap windowing commands of course
+" Remap windowing commands to avoid conflicting with browser commands
 noremap ,w <c-w>
 " Make navigating tabs easy
 noremap 1 1gt
