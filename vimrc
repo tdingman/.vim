@@ -21,7 +21,8 @@ set wildmenu
 " Display line numbers on the left
 set number
 
-
+" No more bells
+set noerrorbells visualbell t_vb=
 
 " New key mappings
 " Make navigation happen on the real home row
