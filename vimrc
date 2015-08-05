@@ -1,7 +1,3 @@
-
-
-
-
 "These three change tabs to two spaces
 set tabstop=2
 set shiftwidth=2
