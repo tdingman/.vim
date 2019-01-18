@@ -24,6 +24,12 @@ set number
 " No more bells
 set noerrorbells visualbell t_vb=
 
+" Show the statusline
+set laststatus=2
+
+" Show file path
+set statusline+=%F
+
 " New key mappings
 " Make navigation happen on the real home row
 noremap h <Nop>
